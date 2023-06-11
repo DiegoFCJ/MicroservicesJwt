@@ -1,13 +1,13 @@
-package com.microJwt.shop;
+package com.microJwt.productService;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class ShopApplication {
+public class productServiceApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(ShopApplication.class, args);
+		SpringApplication.run(productServiceApplication.class, args);
 	}
 
 }

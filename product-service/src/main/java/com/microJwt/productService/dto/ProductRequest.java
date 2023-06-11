@@ -1,4 +1,4 @@
-package com.microJwt.shop.dto;
+package com.microJwt.productService.dto;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -10,9 +10,8 @@ import java.math.BigDecimal;
 @AllArgsConstructor
 @NoArgsConstructor
 @Builder
-public class ProductResponse {
+public class ProductRequest {
 
-    private String id;
     private String name;
     private String description;
     private BigDecimal price;

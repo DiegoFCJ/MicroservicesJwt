@@ -1,9 +1,9 @@
-package com.microJwt.shop.service;
+package com.microJwt.productService.service;
 
-import com.microJwt.shop.dto.ProductRequest;
-import com.microJwt.shop.dto.ProductResponse;
-import com.microJwt.shop.model.Product;
-import com.microJwt.shop.repository.ProductRepository;
+import com.microJwt.productService.dto.ProductRequest;
+import com.microJwt.productService.dto.ProductResponse;
+import com.microJwt.productService.model.Product;
+import com.microJwt.productService.repository.ProductRepository;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
