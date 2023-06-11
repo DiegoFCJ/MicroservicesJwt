@@ -22,7 +22,7 @@ public class ProductController {
         productService.createProd(productRequest);
     }
 
-    @GetMapping
+    @GetMapping("/getAll")
     @ResponseStatus(HttpStatus.OK)
     public List<ProductResponse> getAllProds(){
         return productService.getallProd();
