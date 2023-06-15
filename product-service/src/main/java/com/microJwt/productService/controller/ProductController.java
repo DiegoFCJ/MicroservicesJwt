@@ -1,7 +1,7 @@
 package com.microJwt.productService.controller;
 
-import com.microJwt.productService.dto.ProductRequest;
-import com.microJwt.productService.dto.ProductResponse;
+import com.microJwt.productService.dto.ProductRequestDTO;
+import com.microJwt.productService.dto.ProductResponseDTO;
 import com.microJwt.productService.service.ProductService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
@@ -18,13 +18,13 @@ public class ProductController {
 
     @PostMapping("/create")
     @ResponseStatus(HttpStatus.CREATED)
-    public void createProd(@RequestBody ProductRequest productRequest){
-        productService.createProd(productRequest);
+    public void createProd(@RequestBody ProductRequestDTO productRequestDTO){
+        productService.createProd(productRequestDTO);
     }
 
     @GetMapping("/getAll")
     @ResponseStatus(HttpStatus.OK)
-    public List<ProductResponse> getAllProds(){
+    public List<ProductResponseDTO> getAllProds(){
         return productService.getallProd();
     }
 }

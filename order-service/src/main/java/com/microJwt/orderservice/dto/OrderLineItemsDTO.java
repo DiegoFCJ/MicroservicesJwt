@@ -1,18 +1,20 @@
-package com.microJwt.productService.dto;
+package com.microJwt.orderservice.dto;
 
 import lombok.AllArgsConstructor;
-import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+
+import javax.persistence.Id;
 import java.math.BigDecimal;
 
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-@Builder
-public class ProductRequest {
+public class OrderLineItemsDTO {
 
-    private String name;
-    private String description;
+    @Id
+    private Long id;
+    private String skuCode;
     private BigDecimal price;
+    private Integer quantity;
 }

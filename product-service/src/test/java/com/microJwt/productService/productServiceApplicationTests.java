@@ -1,6 +1,6 @@
 package com.microJwt.productService;
 
-import com.microJwt.productService.dto.ProductRequest;
+import com.microJwt.productService.dto.ProductRequestDTO;
 import com.microJwt.productService.repository.ProductRepository;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
@@ -43,8 +43,8 @@ class productServiceApplicationTests {
 	}
 	@Test
 	void shouldCreateTest() throws Exception {
-		ProductRequest productRequest = getProductRequest();
-		String productRequestString = objectMapper.writeValueAsString(productRequest);
+		ProductRequestDTO productRequestDTO = getProductRequest();
+		String productRequestString = objectMapper.writeValueAsString(productRequestDTO);
 		
 		mockMvc.perform(MockMvcRequestBuilders.post("/api/product/create")
 				.contentType(MediaType.APPLICATION_JSON)
@@ -55,8 +55,8 @@ class productServiceApplicationTests {
 		Assertions.assertEquals(1, productRepository.findAll().size());
 	}
 
-	private ProductRequest getProductRequest() {
-		return ProductRequest.builder()
+	private ProductRequestDTO getProductRequest() {
+		return ProductRequestDTO.builder()
 				.name("Iphone 13")
 				.description("un telefono molto brutto")
 				.price(BigDecimal.valueOf(500))
