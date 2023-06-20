@@ -16,13 +16,13 @@ public class OrderController {
 
     @PostMapping("/create")
     @ResponseStatus(HttpStatus.CREATED)
-    @CircuitBreaker(name = "inventory", fallbackMethod = "fallBackMethod")
+    @CircuitBreaker(name = "inventory" /*fallbackMethod = "fallBackMethod"*/)
     public void create(@RequestBody OrderRequestDTO orderRequestDTO) throws IllegalAccessException {
         orderService.create(orderRequestDTO);
     }
-
+/*
     public String fallBackMethod(OrderRequestDTO orderRequestDTO, RuntimeException runtimeException){
         return "Ops Something went wrong retry after some time";
-    }
+    }*/
 
 }
