@@ -1,8 +1,8 @@
 package com.microJwt.orderservice.service;
 
-import com.microJwt.orderservice.dto.InventoryResponse;
+import com.microJwt.orderservice.dto.response.InventoryResponse;
 import com.microJwt.orderservice.dto.OrderLineItemsDTO;
-import com.microJwt.orderservice.dto.OrderRequestDTO;
+import com.microJwt.orderservice.dto.request.OrderRequestDTO;
 import com.microJwt.orderservice.model.Order;
 import com.microJwt.orderservice.model.OrderLineItems;
 import com.microJwt.orderservice.repository.OrderRepository;

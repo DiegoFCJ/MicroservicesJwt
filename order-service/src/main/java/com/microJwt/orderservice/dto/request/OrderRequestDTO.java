@@ -1,5 +1,6 @@
-package com.microJwt.orderservice.dto;
+package com.microJwt.orderservice.dto.request;
 
+import com.microJwt.orderservice.dto.OrderLineItemsDTO;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;

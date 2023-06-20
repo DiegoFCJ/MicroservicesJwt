@@ -1,6 +1,6 @@
 package com.microJwt.productService;
 
-import com.microJwt.productService.dto.ProductRequestDTO;
+import com.microJwt.productService.dto.request.ProductRequestDTO;
 import com.microJwt.productService.repository.ProductRepository;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;

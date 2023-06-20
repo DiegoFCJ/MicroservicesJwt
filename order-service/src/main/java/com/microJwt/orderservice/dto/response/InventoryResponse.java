@@ -1,4 +1,4 @@
-package com.microJwt.orderservice.dto;
+package com.microJwt.orderservice.dto.response;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;

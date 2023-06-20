@@ -16,6 +16,8 @@ public class SecurityConfig {
                 .csrf().disable()
                 .authorizeExchange(exchange -> exchange
                         .pathMatchers("/eureka/**").permitAll()
+                        .pathMatchers("/swagger-ui.html").permitAll()
+                        .pathMatchers("/**").permitAll()
                         .anyExchange().authenticated())
                 .oauth2ResourceServer(ServerHttpSecurity.OAuth2ResourceServerSpec::jwt);
         return http.build();

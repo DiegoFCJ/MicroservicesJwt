@@ -1,7 +1,7 @@
 package com.microJwt.productService.service;
 
-import com.microJwt.productService.dto.ProductRequestDTO;
-import com.microJwt.productService.dto.ProductResponseDTO;
+import com.microJwt.productService.dto.request.ProductRequestDTO;
+import com.microJwt.productService.dto.response.ProductResponseDTO;
 import com.microJwt.productService.model.Product;
 import com.microJwt.productService.repository.ProductRepository;
 import lombok.RequiredArgsConstructor;

@@ -1,8 +1,10 @@
 package com.microJwt.productService.controller;
 
-import com.microJwt.productService.dto.ProductRequestDTO;
-import com.microJwt.productService.dto.ProductResponseDTO;
+import com.microJwt.productService.dto.request.ProductRequestDTO;
+import com.microJwt.productService.dto.response.ProductResponseDTO;
 import com.microJwt.productService.service.ProductService;
+import io.swagger.annotations.Api;
+import io.swagger.annotations.ApiOperation;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
